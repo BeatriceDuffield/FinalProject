@@ -64,9 +64,14 @@ header > nav > menu {
     display: grid;
     list-style: none;
     grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
 }
 header > nav > menu >li {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 main{
