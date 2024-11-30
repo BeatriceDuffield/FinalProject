@@ -1,6 +1,7 @@
 body{
    margin: 0px;
    background-color: #CAF0F8;
+   overflow-x: hidden;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -12,20 +13,20 @@ body{
 }
 
 h1,h2,h3{
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
 font-size: 4vh;
 }
 figcaption{
-    font-family: 'Rajdhani';
+    font-family: 'Rajdhani', sans-serif;
     font-size: 3vh;
 }
 p{
-    font-family: 'Afacad Flux';
+    font-family: 'Afacad Flux', sans-serif;
     font-size: 2vh;
 }
 a{
-    font-family: 'Afacad Flux';
-    font-size: 3vh;
+    font-family: 'Afacad Flux', sans-serif;
+    font-size: 1.5vw;
 }
 a:link {
     text-decoration: none;
@@ -50,15 +51,17 @@ header{
     grid-template-columns: 20% 80%;
     align-items: center;
     background-color: #ADE8F4;
-    height: 200px;
+    height: 18vw;
 }
 header > div{
-    width: auto;
-    height: 115px;
+    width: 200px;
+    max-width: 500px;
+    height: auto;
 }
 header > div > img{
-    width: auto;
-    height: 145%;
+    width: 20vw;
+    max-width: 500px;
+    height: auto;
 }
 header > nav > menu {
     display: grid;
