@@ -85,4 +85,19 @@ main{
 footer{
     grid-area: footer;
     display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    background-color: #ADE8F4;
+    height: 16vw;
+}
+footer > div > p{
+    font-size: 1.5vw;
+}
+footer > div{
+    padding-right: 3%;
+    text-align: right;
+}
+footer > div + div{
+    padding-left: 3%;
+    text-align: left;
 }
