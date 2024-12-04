@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', (loaded) =>{
-
     document.getElementById("GlobalHeader").innerHTML =
     "<div>" +
         "<img src=img/logo.png alt='Shark.com logo taken from the web'>"+
@@ -17,6 +16,7 @@ document.addEventListener('DOMContentLoaded', (loaded) =>{
             "<!--All of our different pages -->"+
         "</menu>"+
     "</nav>";
+
     document.getElementById("GlobalFooter").innerHTML =
     "<div>"+
         "<p>For more information please contact us at our email:Sharks@email.com</p>"+

@@ -1,3 +1,7 @@
+/* Beatrice Duffield and Nathan Page */
+/* CSS for every page */
+
+/* universal background colour and grid template setup */
 body{
    margin: 0px;
    background-color: #CAF0F8;
@@ -8,26 +12,29 @@ body{
     grid-template-rows: auto;
     grid-template-areas: 
         'header header header header'
-        'main main main main'
+        'main main aside aside'
         'footer footer footer footer';    
 }
 
+/* These set the fonts to certain text based elements*/
 h1,h2,h3{
     font-family: 'Oswald', sans-serif;
-font-size: 4vh;
+font-size: 2.5vw;
 }
 figcaption{
     font-family: 'Rajdhani', sans-serif;
-    font-size: 3vh;
+    font-size: 2vw;
 }
 p{
     font-family: 'Afacad Flux', sans-serif;
-    font-size: 2vh;
+    font-size: 2vw;
 }
 a{
     font-family: 'Afacad Flux', sans-serif;
     font-size: 1.5vw;
 }
+
+/* These just make the a elements not have the line under them, and adds a subtle colour change when moused over for The Aesthetics */
 a:link {
     text-decoration: none;
     color: #0e0e0e;
@@ -45,6 +52,7 @@ a:active {
     color: #0e0e0e;
 }
 
+/* styling for the global header */
 header{
     grid-area: header;
     display: grid;
@@ -77,11 +85,105 @@ header > nav > menu >li {
     text-align: center;
 }
 
+/* basic setup for grid*/
 main{
     grid-area: main;
     display: grid;
 }
 
+/* styling for the index page */
+.indexmain{
+    text-align: center;
+}
+.indexmain>div{
+    width: 99vw;
+    height: auto;
+}
+.main-fig > img{
+    width: 60vw;
+    height: auto;
+}
+
+/* styling for the about page */
+.aboutpage{
+    width: 98vw;
+    text-align: center;
+}
+.aboutpage>figure>img{
+    text-align: center;
+    width: 30vw;
+    height: auto;
+}
+.aboutpage>figure>img+figcaption{
+    text-align: center;
+}
+/* styling for the contact page, relatively simple compared to others */
+.contactmain{
+    width: 100vw;
+    text-align: center;
+}
+
+/* styling for the store page */
+.store-list{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.store-list>div+figure>figcaption{
+    text-align: center;
+}
+.store-list>div+figure>img{
+    width: 20vw;
+    height: auto;
+}
+.store-button{
+    align-content: center;
+    text-align: center;
+    color: #CAF0F8;
+    height: 5vw;
+    background-color: #0077b6;
+    border: solid 3px #023E8A;
+}
+
+/* styling for the individual store pages, needing both Main and Aside styling */
+.shop-pages{
+    width: 40vw;
+    padding-bottom: 2.5%;
+}
+.text-top{
+    text-align: center;
+    padding-top: 2.5%;
+}
+.shop-pages > div + div{
+    text-align: center;
+    padding: 2.5%;
+}
+.buy-button > nav > a{
+    color: #CAF0F8;
+    padding: 1.5%;
+    background-color: #0077b6;
+    border: solid 3px #023E8A;
+}
+
+/* styling for the aside of the store pages */
+aside{
+    grid-area: aside;
+    display: grid;
+    background-color: #023E8A;
+}
+.storepicture{
+    align-content: center;
+    padding: 0%;
+}
+.storepicture>figure{
+    color: #CAF0F8;
+    text-align: center;
+}
+.storepicture>figure>img{
+    width: 45vw;
+    height: auto;
+}
+
+/* styling for the global footer page */
 footer{
     grid-area: footer;
     display: grid;
